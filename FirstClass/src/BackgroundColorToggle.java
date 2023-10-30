@@ -1,4 +1,3 @@
-package FirstClass.src;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.JLabel;
@@ -9,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class BackgroundColorToggle extends JFrame {
-
     JPanel panel = new JPanel();
     JLabel label = new JLabel();
     JButton toggleButton = new JButton();

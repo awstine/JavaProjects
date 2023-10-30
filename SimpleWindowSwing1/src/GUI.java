@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public class GUI extends JFrame implements ActionListener {
+public class GUI extends JFrame  {
         public GUI() {
             super("SECOND GUI  APPLICATION");
             setSize(400,300);
