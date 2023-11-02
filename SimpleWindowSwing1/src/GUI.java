@@ -1,6 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
+import java.awt.GridLayout;
 
 public class GUI extends JFrame  {
         public GUI() {

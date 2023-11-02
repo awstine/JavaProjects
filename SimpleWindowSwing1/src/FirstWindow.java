@@ -13,6 +13,7 @@ public class FirstWindow extends JFrame {
 
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         JButton endButton = new JButton("Clicking ends the program");
+       // EndingListener buttonEar = new EndingListener();
         endButton.addActionListener(new EndingListener());
         add(endButton);
     }

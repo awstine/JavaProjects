@@ -5,7 +5,7 @@ public class ColouredWindow1 {
         ColouredWindow w1 = new ColouredWindow();
         w1.setVisible(true);
 
-        ColouredWindow w2 = new ColouredWindow(Color.CYAN);
-        w2.setVisible(true);
+//        ColouredWindow w2 = new ColouredWindow(Color.CYAN);
+//        w2.setVisible(true);
     }
 }
