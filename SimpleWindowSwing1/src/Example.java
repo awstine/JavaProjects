@@ -3,23 +3,23 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Panels extends JFrame implements ActionListener {
+public class Example extends JFrame implements ActionListener {
 
     private JPanel blackPanel;
     private JPanel redPanel;
     private JPanel whitePanel;
     private JPanel greenPanel;
 
-    public Panels(){
+    public Example(){
         //Super("") is the same as setTitle("");
-        super("I LOVE KENYA");
-        setSize(500,500);
+        super("Panels");
+        setSize(600,600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
         //Set bigger panel with what it contains
         JPanel biggerPanel = new JPanel();
-        biggerPanel.setLayout(new GridLayout(1,4));
+        biggerPanel.setLayout(new GridLayout(1,3));
 
         //Inserting the panels to spaces on the bigger panel
         blackPanel = new JPanel();
@@ -55,31 +55,17 @@ public class Panels extends JFrame implements ActionListener {
         JButton redButton = new JButton("Red");
         redButton.setBackground(Color.red);
         redButton.addActionListener(this);
-        buttonPanel.add(redButton);
+        redButton.add(redButton);
 
         JButton whiteButton = new JButton("White");
         whiteButton.setBackground(Color.white);
         whiteButton.addActionListener(this);
-        buttonPanel.add(whiteButton);
+        whiteButton.add(whiteButton);
 
         JButton greenButton = new JButton("Green");
         greenButton.setBackground(Color.green);
         greenButton.addActionListener(this);
-        buttonPanel.add(greenButton);
-
-        JButton clear = new JButton("clear");
-        clear.setBackground(Color.CYAN);
-        clear.addActionListener(
-                new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        redPanel.setBackground(null);
-                        blackPanel.setBackground(null);
-                        whitePanel.setBackground(null);
-                        greenPanel.setBackground(null);
-                    }
-                }
-        );
-        buttonPanel.add(clear);
+        greenButton.add(greenButton);
 
         add(buttonPanel,BorderLayout.SOUTH);
     }
@@ -88,7 +74,7 @@ public class Panels extends JFrame implements ActionListener {
         String buttonString = e.getActionCommand();
 
         if (buttonString.equals("Black"))
-            blackPanel.setBackground(Color.black);
+            redPanel.setBackground(Color.black);
         else if(buttonString.equals("Red"))
             redPanel.setBackground(Color.red);
         else if (buttonString.equals("White"))
